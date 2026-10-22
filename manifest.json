@@ -1,0 +1,27 @@
+{
+  "manifest_version": "0.3",
+  "name": "rowsend",
+  "display_name": "Rowsend",
+  "version": "1.0.0",
+  "description": "Draft and test marketing email for contacts in your own database, from a local desktop app.",
+  "long_description": "Connects to the Rowsend desktop app running on your computer. Agents can connect your database, write campaigns in your brand, preview them and send you a test. Sending stays a button in the app, and keys never pass through MCP. Needs Rowsend installed in Applications. The first time this connects, Rowsend asks you to allow it.",
+  "author": { "name": "Rowsend", "url": "https://rowsend.com" },
+  "homepage": "https://rowsend.com",
+  "documentation": "https://rowsend.com/docs/agents/mcp/",
+  "support": "https://github.com/rowsend/mcp/issues",
+  "repository": { "type": "git", "url": "https://github.com/rowsend/mcp" },
+  "license": "MIT",
+  "keywords": ["email", "email marketing", "newsletter", "supabase", "postgres"],
+  "server": {
+    "type": "node",
+    "entry_point": "bin/rowsend-mcp.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/bin/rowsend-mcp.js"]
+    }
+  },
+  "compatibility": {
+    "platforms": ["darwin"],
+    "runtimes": { "node": ">=18.0.0" }
+  }
+}

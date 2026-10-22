@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "com.rowsend/rowsend",
+  "title": "Rowsend",
+  "description": "Draft and test marketing email for contacts in your own database, from a local desktop app.",
+  "websiteUrl": "https://rowsend.com/docs/agents/mcp/",
+  "repository": { "url": "https://github.com/rowsend/mcp", "source": "github" },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@rowsend/mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}
