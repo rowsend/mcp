@@ -1,0 +1,36 @@
+{
+  "name": "rowsend",
+  "version": "1.0.0",
+  "description": "Draft and test marketing email for contacts in your own database, through the Rowsend desktop app. Includes Rowsend's MCP server and a setup skill.",
+  "author": { "name": "Rowsend", "url": "https://rowsend.com" },
+  "homepage": "https://rowsend.com/docs/agents/mcp/",
+  "repository": "https://github.com/rowsend/mcp",
+  "license": "MIT",
+  "keywords": ["email", "email-marketing", "newsletter", "supabase", "postgres", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Rowsend",
+    "shortDescription": "Email your own users",
+    "longDescription": "Connects to the Rowsend desktop app on your Mac. Your agent can connect your database (Supabase, Postgres, MySQL, MongoDB or Firebase Auth), set up your sender (SES, Postmark, Mailgun or SMTP), draft campaigns in your brand, preview them and send you a test. You click Send in the app, and keys never pass through the agent. Needs Rowsend 1.4.2 or later installed in Applications; the first time it connects, Rowsend asks you to allow it.",
+    "developerName": "Rowsend",
+    "category": "Productivity",
+    "capabilities": ["Connect your database", "Draft campaigns", "Send test emails", "Read campaign stats"],
+    "websiteURL": "https://rowsend.com",
+    "supportURL": "https://github.com/rowsend/mcp/issues",
+    "privacyPolicyURL": "https://rowsend.com/privacy",
+    "termsOfServiceURL": "https://rowsend.com/terms",
+    "defaultPrompt": [
+      "Set up Rowsend for this project.",
+      "Draft a campaign announcing our latest release.",
+      "How did my last campaign do?"
+    ],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/rowsend-setup/SKILL.md"
+    }
+  }
+}

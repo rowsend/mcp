@@ -1,0 +1,15 @@
+{
+  "name": "rowsend",
+  "owner": { "name": "Rowsend", "url": "https://rowsend.com" },
+  "metadata": { "description": "Rowsend's plugin for Claude Code." },
+  "plugins": [
+    {
+      "name": "rowsend",
+      "source": "./plugins/rowsend",
+      "description": "Draft and test marketing email for contacts in your own database, through the Rowsend desktop app.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "homepage": "https://rowsend.com/docs/agents/mcp/"
+    }
+  ]
+}

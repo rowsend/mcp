@@ -2,3 +2,6 @@
 server.json
 .gitignore
 *.tgz
+plugins/
+.claude-plugin/
+.agents/

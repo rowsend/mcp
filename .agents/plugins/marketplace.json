@@ -1,0 +1,12 @@
+{
+  "name": "rowsend",
+  "interface": { "displayName": "Rowsend" },
+  "plugins": [
+    {
+      "name": "rowsend",
+      "source": { "source": "local", "path": "./plugins/rowsend" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -27,6 +27,24 @@ Claude Code:
 claude mcp add rowsend -- npx -y @rowsend/mcp
 ```
 
+## Plugins for Claude Code and Codex
+
+The plugin adds the MCP server and a `rowsend-setup` skill. The skill walks your agent through connecting your database and sender and drafting a first campaign.
+
+Claude Code:
+
+```bash
+claude plugin marketplace add rowsend/mcp
+claude plugin install rowsend@rowsend
+```
+
+Codex:
+
+```bash
+codex plugin marketplace add rowsend/mcp
+codex plugin add rowsend@rowsend
+```
+
 The first time the client connects, Rowsend asks you to allow it. Click **Allow**. Rowsend keeps that client's token encrypted on your computer, so it asks only once. To cut a client off, revoke it in Rowsend → Settings → MCP.
 
 If Rowsend is somewhere other than Applications, set `ROWSEND_APP` to its path, such as `/Users/you/Apps/Rowsend.app`.

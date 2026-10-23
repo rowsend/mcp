@@ -1,0 +1,10 @@
+{
+  "name": "rowsend",
+  "version": "1.0.0",
+  "description": "Draft and test marketing email for contacts in your own database, through the Rowsend desktop app. Includes Rowsend's MCP server and a setup skill.",
+  "author": { "name": "Rowsend", "url": "https://rowsend.com" },
+  "homepage": "https://rowsend.com/docs/agents/mcp/",
+  "repository": "https://github.com/rowsend/mcp",
+  "license": "MIT",
+  "keywords": ["email", "email-marketing", "newsletter", "supabase", "postgres", "mcp"]
+}
