@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// Copied into plugins/rowsend/server/rowsend-mcp.mjs by `npm run sync-plugin`; edit this file, not the copy.
 // Starts the Rowsend desktop app as a stdio MCP server. Rowsend's server runs inside the app; this
 // finds the app and runs it with --mcp-stdio, which relays stdio to it. The first time a client
 // connects, Rowsend asks you to allow it.

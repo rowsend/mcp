@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "rowsend": {
-      "command": "npx",
-      "args": ["-y", "@rowsend/mcp@^1"]
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/server/rowsend-mcp.mjs"]
     }
   }
 }

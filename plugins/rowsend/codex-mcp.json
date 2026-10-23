@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rowsend": {
+      "command": "npx",
+      "args": ["-y", "@rowsend/mcp@1.0.0"]
+    }
+  }
+}

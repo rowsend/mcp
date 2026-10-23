@@ -20,7 +20,7 @@ This plugin connects you to Rowsend's MCP server. Check: call `list_projects`. I
 If Rowsend's tools are missing or return an error, the error says why. Work through these in order:
 
 - **Not a Mac.** Rowsend runs on macOS only. Tell the person and stop.
-- **Rowsend isn't installed.** Check `/Applications/Rowsend.app`. If it's missing, download the build for this Mac's chip and open it:
+- **Rowsend isn't installed.** Check `/Applications/Rowsend.app`. If it's missing, tell the person you're going to install it from Rowsend's GitHub releases. Then download the build for this Mac's chip and open it:
 
   ```bash
   arch=$([ "$(uname -m)" = "arm64" ] && echo arm64 || echo x64)

@@ -4,14 +4,38 @@
   "description": "MCP server for Rowsend: let AI agents draft marketing email for contacts in your own database.",
   "mcpName": "com.rowsend/rowsend",
   "type": "module",
-  "bin": { "rowsend-mcp": "bin/rowsend-mcp.js" },
-  "files": ["bin"],
-  "os": ["darwin"],
-  "engines": { "node": ">=18" },
+  "bin": {
+    "rowsend-mcp": "bin/rowsend-mcp.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "homepage": "https://rowsend.com/docs/agents/mcp/",
-  "repository": { "type": "git", "url": "git+https://github.com/rowsend/mcp.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rowsend/mcp.git"
+  },
   "bugs": "https://github.com/rowsend/mcp/issues",
   "license": "MIT",
   "author": "Rowsend",
-  "keywords": ["mcp", "model-context-protocol", "email", "email-marketing", "newsletter", "supabase", "postgres", "ses", "postmark"]
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "email",
+    "email-marketing",
+    "newsletter",
+    "supabase",
+    "postgres",
+    "ses",
+    "postmark"
+  ],
+  "scripts": {
+    "sync-plugin": "cp bin/rowsend-mcp.js plugins/rowsend/server/rowsend-mcp.mjs"
+  }
 }
