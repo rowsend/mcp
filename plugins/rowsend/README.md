@@ -16,7 +16,7 @@
 
 - It runs one program: the Rowsend app already installed on your computer. If the app is missing, too old or not on macOS, the launcher prints why and exits.
 - The plugin itself sends nothing over the network and fetches nothing. Your agent talks to the app on your own computer.
-- The setup skill may ask your agent to download Rowsend from `github.com/rowsend/releases` if it isn't installed, and it tells you before it does.
+- If Rowsend isn't installed, the setup skill asks you to download it from rowsend.com. It never downloads or installs anything itself.
 - Rowsend keeps contacts, campaigns and keys on your computer. Your agent can read contacts and draft campaigns, but it can't send a campaign, delete anything or see passwords and API keys. You click Send in the app.
 
 ## Example prompts

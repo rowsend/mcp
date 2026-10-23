@@ -20,19 +20,7 @@ This plugin connects you to Rowsend's MCP server. Check: call `list_projects`. I
 If Rowsend's tools are missing or return an error, the error says why. Work through these in order:
 
 - **Not a Mac.** Rowsend runs on macOS only. Tell the person and stop.
-- **Rowsend isn't installed.** Check `/Applications/Rowsend.app`. If it's missing, tell the person you're going to install it from Rowsend's GitHub releases. Then download the build for this Mac's chip and open it:
-
-  ```bash
-  arch=$([ "$(uname -m)" = "arm64" ] && echo arm64 || echo x64)
-  curl -fL -o /tmp/Rowsend.dmg "https://github.com/rowsend/releases/releases/latest/download/Rowsend-$arch.dmg"
-  hdiutil attach /tmp/Rowsend.dmg -nobrowse -quiet -mountpoint /tmp/rowsend-dmg
-  cp -R /tmp/rowsend-dmg/Rowsend.app /Applications/
-  hdiutil detach /tmp/rowsend-dmg -quiet
-  rm /tmp/Rowsend.dmg
-  open -a Rowsend
-  ```
-
-  Rowsend opens with a free trial and needs no card or account.
+- **Rowsend isn't installed.** Check `/Applications/Rowsend.app`. If it's missing, ask the person to download Rowsend from https://rowsend.com, drag it into Applications and open it. Wait for them to say it's done. Rowsend opens with a free trial and needs no card or account.
 - **Rowsend is too old.** It needs version 1.4.2 or later. Ask the person to update it in **Rowsend → Settings → Updates**.
 - **Rowsend asked to allow this app.** The first time you connect, Rowsend asks the person to allow it. If they missed it or clicked Deny, ask them to watch for the dialog.
 
