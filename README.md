@@ -1,5 +1,7 @@
 # Rowsend MCP server
 
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/rowsend/mcp)
+
 [Rowsend](https://rowsend.com) is a desktop app for marketing email. It reads contacts from your own database (Postgres on Supabase or Neon, MySQL, PlanetScale, MongoDB or Firebase Auth) and sends through your own provider (SES, Postmark, Mailgun or SMTP). Contacts and keys stay on your computer.
 
 This package connects an MCP client such as Claude Desktop, Cursor or Claude Code to the Rowsend app. Agents can connect your database, write campaigns in your brand, preview them and send you a test. You click Send in the app.
@@ -51,15 +53,15 @@ If Rowsend is somewhere other than Applications, set `ROWSEND_APP` to its path, 
 
 ## What agents can do
 
-| Area | Tools |
-| --- | --- |
-| Projects | `list_projects`, `create_project` |
-| Database | `prepare_database_setup`, `complete_database_setup`, `open_database_setup`, `get_pending_setup`, `list_database_fields`, `set_contact_fields`, `get_data_source_status`, `sync_contacts`, `set_sync_interval` |
-| Sending setup | `open_sender_setup`, `get_sender`, `verify_sender`, `setup_ses_bounce`, `setup_postmark_webhook`, `set_sending_limits` |
-| Contacts | `list_contacts`, `list_segments`, `create_segment`, `preview_audience`, `add_suppression` |
-| Topics | `list_topics`, `create_topic` |
-| Content | `get_brand`, `list_templates`, `get_template`, `create_template`, `update_template`, `list_images`, `upload_image`, `preview_email` |
-| Campaigns | `list_campaigns`, `get_campaign`, `create_campaign`, `update_campaign`, `duplicate_campaign`, `send_test`, `get_campaign_stats`, `pause_campaign`, `resume_campaign`, `cancel_campaign`, `retry_failures` |
+| Area          | Tools                                                                                                                                                                                                         |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Projects      | `list_projects`, `create_project`                                                                                                                                                                             |
+| Database      | `prepare_database_setup`, `complete_database_setup`, `open_database_setup`, `get_pending_setup`, `list_database_fields`, `set_contact_fields`, `get_data_source_status`, `sync_contacts`, `set_sync_interval` |
+| Sending setup | `open_sender_setup`, `get_sender`, `verify_sender`, `setup_ses_bounce`, `setup_postmark_webhook`, `set_sending_limits`                                                                                        |
+| Contacts      | `list_contacts`, `list_segments`, `create_segment`, `preview_audience`, `add_suppression`                                                                                                                     |
+| Topics        | `list_topics`, `create_topic`                                                                                                                                                                                 |
+| Content       | `get_brand`, `list_templates`, `get_template`, `create_template`, `update_template`, `list_images`, `upload_image`, `preview_email`                                                                           |
+| Campaigns     | `list_campaigns`, `get_campaign`, `create_campaign`, `update_campaign`, `duplicate_campaign`, `send_test`, `get_campaign_stats`, `pause_campaign`, `resume_campaign`, `cancel_campaign`, `retry_failures`     |
 
 ## What agents can't do
 
